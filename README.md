@@ -5,3 +5,5 @@ Based on the Arduino Capacitive Sensor Library
 This project uses knitted stretch sensors to make sounds
 Resistive:
 Based on the Adafruit psuedo theremin
+Resources 
+https://playground.arduino.cc/Main/CapacitiveSensor/
