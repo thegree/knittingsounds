@@ -5,15 +5,15 @@ Two ways to make sounds with knitted sensors:
 
 Capacitive and Resistive
 
-CAPACITIVE:
+# CAPACITIVE:
 
 Based on the Arduino Capacitive Sensor Library
 
-RESISTIVE:
+# RESISTIVE:
 
 Based on the Adafruit psuedo theremin
 
-RESOURCES 
+# RESOURCES 
 
 https://playground.arduino.cc/Main/CapacitiveSensor/
 
