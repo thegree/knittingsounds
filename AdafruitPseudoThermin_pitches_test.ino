@@ -11,10 +11,8 @@ int resistorPin = 0;
 
 int sensorTrip = 100; 
 
-//The range of capacitive sensor values to be
-//mapped to music tones. See example
-//"help/CapacitiveSwitchTest" about how to get
-//the values
+//The range of sensor values to be
+//mapped to music tones. 
 int lowerThreshold=80;
 int upperThreshold=900;
 
