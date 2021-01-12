@@ -1,12 +1,14 @@
 /*
   Knittingsounds by Tamar Greenberg
+  Adapted from Arduino Drawdio
   Adapted from Adafruit Arduino - Lesson 10. Pseudo Thermin 
   See https://learn.adafruit.com/adafruit-arduino-lesson-10-making-sounds?view=all for detailed explanation. 
   
-  Speaker Connection: negative to ground / positive to D12
-  Resistor Connection: ground / A1
-  Knitted Cord 1: 5V
-  Knitted Cord 2: A1  
+  Connections:
+  -Speaker Connection: negative to ground / positive to D12
+  -1K Resistor Connection: ground / A1 (try different resistors)
+  -Knitted Conductive Cord 1: 5V
+  -Knitted Concductive Cord 2: A1  
 
   This sketch uses the tone commmand. 
   https://www.arduino.cc/reference/en/language/functions/advanced-io/tone/
@@ -29,12 +31,12 @@ int speakerPin = 12;
 //A stretch resistor connected to analog pin A1
 int resistorPin = A1;
 
-int sensorTrip = 100;
+int sensorTrip = 10;
 
 //The range of sensor values to be
 //mapped to music tones. 
-int lowerThreshold = 80;
-int upperThreshold = 800;
+int lowerThreshold = 30;
+int upperThreshold = 900;
 
 //Define the lowest and highest tone. 
 //Defined in pitches.h
@@ -68,6 +70,6 @@ void loop()
     tone(speakerPin, music, 200);                  // drive a piezo element at pin A, frequency B, and for C microseconds
   }
 
-  delay (100);
+  delay (100);   //try changing delay (in milliseconds) and see what happens
 
 }
